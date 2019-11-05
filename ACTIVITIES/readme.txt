@@ -2,6 +2,6 @@
 
 Table of Contents:
 
-1. Adding two numbers
-2. Finding the Area of a Circle usinf Radius and Diameter
-3. Odd and Even Numbers
+1. Flowcharts and Pseudocodes
+2. Flowcharting Exercise
+3. Pseudo-codes Exercises
