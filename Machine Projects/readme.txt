@@ -1,4 +1,4 @@
-"MACHINE PROJECTS AREA"
+"MACHINE PROJECTS ZONE"
 
 
 Hello! Welcome to my Machine Project Zone
