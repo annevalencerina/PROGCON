@@ -3,6 +3,7 @@
 Here are my entry titles:
 
 
-1. FLowcharts and Pseudocodes
-2. Flowcharting Exercise
-3. Pseudo-code Exercises
+A1 - Flowcharts & Pseudocodes
+A2 - Flow-charting Exercise
+A3 - Pseudo-code Exercises
+A4 - Flowgorithm Exercises
