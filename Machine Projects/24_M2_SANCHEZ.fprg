@@ -1,0 +1,54 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Rams"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2019-11-19 08:40:46 AM"/>
+        <attribute name="created" value="UmFtcztMQUIzMDRDMTQ7MjAxOS0xMS0xOTswNzo1Njo1MyBBTTsyMjA4"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMTQ7MjAxOS0xMS0xOTswODo0MDo0NiBBTTsyOzIzMTM="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="RADIUS" type="Real" array="False" size=""/>
+            <declare name="DIAMETER" type="Real" array="False" size=""/>
+            <declare name="ANSWER" type="Real" array="False" size=""/>
+            <declare name="AREA" type="String" array="False" size=""/>
+            <declare name="RESPONSE" type="String" array="False" size=""/>
+            <declare name="YES" type="String" array="False" size=""/>
+            <output expression="&quot;WELCOME&quot;" newline="True"/>
+            <output expression="&quot;ARE YOU GOING TO FIND THE ARE OF A CIRCLE? YES OR NO?&quot;" newline="True"/>
+            <input variable="RESPONSE"/>
+            <output expression="&quot;DO YOU HAVE THE VALUE OF RADIUS OR DIAMETER?&quot;" newline="True"/>
+            <input variable="RESPONSE"/>
+            <if expression="RESPONSE = &quot;RADIUS&quot;">
+                <then>
+                    <output expression="&quot;ENTER THE VALUE OF RADIUS&quot;" newline="True"/>
+                    <input variable="RADIUS"/>
+                    <assign variable="AREA" expression="ToFixed(pi*(RADIUS^2),2)"/>
+                    <output expression="&quot;The area of a circle with the Radius &quot;&amp;Radius &amp;&quot; is &quot;&amp;Area" newline="True"/>
+                </then>
+                <else>
+                    <output expression="&quot;DO YOU HAVE THE VALUE OF DIAMETER? YES OR NO?&quot;" newline="True"/>
+                    <input variable="RESPONSE"/>
+                    <if expression="RESPONSE = &quot;YES&quot;">
+                        <then>
+                            <output expression="&quot;ENTER THE VALUEOF DIAMETER&quot;" newline="True"/>
+                            <input variable="DIAMETER"/>
+                            <assign variable="RADIUS" expression="DIAMETER/2"/>
+                            <assign variable="AREA" expression="ToFixed(pi*(DIAMETER^2),2)"/>
+                            <output expression="&quot;The area of a circle with the Diameter &quot;&amp;Diameter &amp;&quot; is &quot;&amp;Area" newline="True"/>
+                            <output expression="&quot;CONGRATS!&quot;" newline="True"/>
+                        </then>
+                        <else>
+                            <output expression="&quot;YOU CANNOT FIND THE VALUE OF THE CIRCLE WITHOUT THE VALUE OF DIAMETER&quot;" newline="True"/>
+                            <output expression="&quot;END of PROCESS&quot;" newline="True"/>
+                            <breakpoint/>
+                        </else>
+                    </if>
+                </else>
+            </if>
+        </body>
+    </function>
+</flowgorithm>
