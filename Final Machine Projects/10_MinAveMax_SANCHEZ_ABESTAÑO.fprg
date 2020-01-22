@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-16 11:43:00 PM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTE6MzQ6NDMgUE07MzM0OQ=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTE6NTQ6MDkgUE07MzszNDYz"/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC0wSUFQS0FSOzIwMjAtMDEtMTY7MTE6NDM6MDAgUE07MzsyOTM1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="sum, ave, min, max" type="Real" array="False" size=""/>
+            <declare name="numbers" type="Real" array="True" size="10"/>
+            <declare name="number" type="Real" array="False" size=""/>
+            <declare name="i" type="Integer" array="False" size=""/>
+            <assign variable="sum" expression="0"/>
+            <output expression="&quot;Enter 10 numbers:&quot;" newline="True"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <input variable="number"/>
+                <assign variable="numbers[i]" expression="number"/>
+                <assign variable="sum" expression="sum + number"/>
+            </for>
+            <assign variable="max" expression="numbers[0]"/>
+            <assign variable="min" expression="numbers[0]"/>
+            <for variable="i" start="0" end="9" direction="inc" step="1">
+                <if expression="numbers[i] &gt; max">
+                    <then>
+                        <assign variable="max" expression="numbers[i]"/>
+                    </then>
+                    <else/>
+                </if>
+                <if expression="numbers[i] &lt; min">
+                    <then>
+                        <assign variable="min" expression="numbers[i]"/>
+                    </then>
+                    <else/>
+                </if>
+            </for>
+            <assign variable="ave" expression="sum / 10"/>
+            <output expression="&quot;The average is &quot; &amp; ave &amp; &quot;, the min value is &quot; &amp; min &amp; &quot; and the max value is &quot; &amp; max &amp; &quot;.&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

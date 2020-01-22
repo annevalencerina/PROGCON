@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sony"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-16 08:30:59 PM"/>
+        <attribute name="created" value="c29ueTtWQUlPOzIwMjAtMDEtMTY7MDc6NDI6MDAgUE07MjAyOQ=="/>
+        <attribute name="edited" value="c29ueTtWQUlPOzIwMjAtMDEtMTY7MDg6MzA6NTkgUE07NTsyMTUz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="ft" type="Integer" array="False" size=""/>
+            <declare name="in" type="Integer" array="False" size=""/>
+            <output expression="&quot;Oh! a visitor, why hello there; may I know what's your name?&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Hello!!!&quot; &amp; name" newline="True"/>
+            <output expression="&quot;Let's convert feet to inches&quot;" newline="True"/>
+            <output expression="&quot;Please type in the value of feet and we shall begin&quot;" newline="True"/>
+            <input variable="ft"/>
+            <output expression="&quot;Great!!! now let's us find out the equivalent of the value to inches!&quot;" newline="True"/>
+            <output expression="&quot;Drumroll please....&quot;" newline="True"/>
+            <assign variable="in" expression="ft * 12"/>
+            <output expression="in &amp; &quot;Awesome!!! now that you know the answer, why don't you share it to the world!!!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

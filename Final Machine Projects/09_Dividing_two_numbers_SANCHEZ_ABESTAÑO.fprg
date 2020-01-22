@@ -1,0 +1,27 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="Althea Amor"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-17 08:52:14 AM"/>
+        <attribute name="created" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTA6Mjk6MTUgUE07MzM1MQ=="/>
+        <attribute name="edited" value="QWx0aGVhIEFtb3I7TEFQVE9QLU84QjE4S1BWOzIwMjAtMDEtMTU7MTE6MzM6NDIgUE07MzszNDU3"/>
+        <attribute name="edited" value="UGhpYSBMYXVyZXRhO0RFU0tUT1AtNlBDRzdWRjsyMDIwLTAxLTE3OzEyOjIwOjU3IEFNOzM7MzU3MQ=="/>
+        <attribute name="edited" value="QWRtaW47REVTS1RPUC0wSUFQS0FSOzIwMjAtMDEtMTc7MTI6Mzk6NTEgQU07MTsyOTMx"/>
+        <attribute name="edited" value="UmFtcztMQUIzMDRDMDk7MjAyMC0wMS0xNzswODo1MjoxNCBBTTs0OzIzMDY="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Lets divide&quot;" newline="True"/>
+            <declare name="dividend, divisor" type="Real" array="False" size=""/>
+            <output expression="&quot;Enter dividend:&quot;" newline="True"/>
+            <input variable="dividend"/>
+            <output expression="&quot;Enter divisor:&quot;" newline="True"/>
+            <input variable="divisor"/>
+            <output expression="&quot;The quotient is &quot; &amp; dividend/divisor &amp; &quot;.&quot;" newline="True"/>
+            <output expression="&quot;That's all! This is the end of program&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

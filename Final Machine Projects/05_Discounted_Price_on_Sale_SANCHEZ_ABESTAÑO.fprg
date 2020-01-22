@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sony"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-16 10:19:41 PM"/>
+        <attribute name="created" value="c29ueTtWQUlPOzIwMjAtMDEtMTY7MDg6MzE6MjcgUE07MjAzNw=="/>
+        <attribute name="edited" value="c29ueTtWQUlPOzIwMjAtMDEtMTY7MTA6MTk6NDEgUE07MTY7MjE5NA=="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="name" type="String" array="False" size=""/>
+            <declare name="percentagediscount" type="Real" array="False" size=""/>
+            <declare name="originalprice" type="Integer" array="False" size=""/>
+            <declare name="saleprice" type="Integer" array="False" size=""/>
+            <declare name="discounted" type="Integer" array="False" size=""/>
+            <declare name="finalprice" type="Integer" array="False" size=""/>
+            <output expression="&quot;So you're having trouble with the discount price ehh???&quot;" newline="True"/>
+            <output expression="&quot;Don't worry, I'll help you, But first, I wanna know who you are &amp; your credit card number. ( &#865;&#176; &#860;&#662; &#865;&#176;)&quot;" newline="True"/>
+            <output expression="&quot;...Just kidding!!! just the name please&quot;" newline="True"/>
+            <input variable="name"/>
+            <output expression="&quot;Why hello there!!!&quot; &amp; name" newline="True"/>
+            <output expression="&quot;Moving on...Please input the original price of whatever you bought.&quot;" newline="True"/>
+            <input variable="originalprice"/>
+            <output expression="&quot;Next, type in the value of the discount...&quot;" newline="True"/>
+            <output expression="&quot;NOTE!!! PLEASE INPUT THE DISCOUNT PERCENTAGE AS A NUMBER WITH DECIMALS...EXAMPLE: .25&quot;" newline="True"/>
+            <output expression="&quot;Sorry, I don't know how to deal with percentage, I ain't that advanced &#175;\_( &#865;&#3232;&#8239;&#860;&#662; &#865;&#3232;)_/&#175;&quot;" newline="True"/>
+            <input variable="percentagediscount"/>
+            <output expression="&quot;Thank you!&quot; &amp; name &amp; &quot;and now we shall begin the ritual &#664;&#8255;&#664;&quot;" newline="True"/>
+            <output expression="&quot;...I mean, determining the sale price&quot;" newline="True"/>
+            <assign variable="discounted" expression="percentagediscount * originalprice"/>
+            <output expression="&quot;Ready?&quot; &amp; name &amp; &quot;It's not like you have any other choice, I don't have Boolean in my code &#175;\_(&#12484;)_/&#175;&quot;" newline="True"/>
+            <assign variable="saleprice" expression="originalprice - discounted"/>
+            <output expression="&quot;And your discounted sale price is.....&quot;" newline="True"/>
+            <assign variable="finalprice" expression="originalprice - saleprice"/>
+            <output expression="finalprice" newline="True"/>
+            <output expression="&quot;( &#865;&#7508; &#860;&#662; &#865;&#7508; ) Yey!!! hope you brought them cash with you, oh you did? now go on a shopping spree!!!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="sony"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2020-01-15 08:24:01 PM"/>
+        <attribute name="created" value="c29ueTtWQUlPOzIwMjAtMDEtMTU7MDM6NDc6MTYgUE07MjAzNg=="/>
+        <attribute name="edited" value="c29ueTtWQUlPOzIwMjAtMDEtMTU7MDg6MjQ6MDEgUE07NDsyMTQx"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <output expression="&quot;Hello! I'm here to help you convert Celsius to Fahrenheit&quot;" newline="True"/>
+            <declare name="cel" type="Integer" array="False" size=""/>
+            <declare name="fah" type="Integer" array="False" size=""/>
+            <output expression="&quot;Please input the value of Celsius&quot;" newline="True"/>
+            <input variable="cel"/>
+            <output expression="&quot;Awesome! now it's time to convert it to Fahrenheit&quot;" newline="True"/>
+            <assign variable="fah" expression="(cel*9/5) + 32"/>
+            <output expression="fah &amp; &quot;is the answer!&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
